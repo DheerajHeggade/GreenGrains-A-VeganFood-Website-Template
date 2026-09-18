@@ -8,6 +8,7 @@ A glassmorphism-styled, 100% plant-based e-commerce site built for gym-goers: hi
 - **Cart** — slide-in glass drawer, quantity controls, free-delivery progress bar, `localStorage` persistence, WhatsApp demo checkout
 - **Protein Calculator** — daily protein & kcal targets by weight, goal and activity; auto-fills your cart with suggested meals
 - **Meal Plans** — Lean Cut, Bulk Builder and Athlete subscriptions
+- **Brand video** — an accessible, responsive HTML5 video section with a local MP4 asset and download fallback
 - **Design** — full glassmorphism (frosted glass, aurora orbs, neon lime/mint accents), scroll-reveal animations, fully responsive
 
 ## 🚀 Run locally
@@ -28,6 +29,7 @@ Or simply double-click `index.html`.
 | `index.html` | Page structure — hero, shop, calculator, plans, reviews, FAQ, cart drawer |
 | `styles.css` | Glassmorphism design system + responsive layout |
 | `script.js` | Catalog, filters, cart, calculator, toasts |
+| `assets/green-gains.mp4` | Included brand video used by the video section |
 
 ## ⚠️ Demo notes
 
