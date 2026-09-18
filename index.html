@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Gains · Vegan Fuel for Lifters — Plant-Based High-Protein Foods</title>
+  <meta name="description" content="Green Gains is a 100% vegan kitchen for gym people. High-protein bowls, shakes, snacks and meal plans — macro-counted, delivered chilled. Prices in INR." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="orbs" aria-hidden="true">
+    <span class="orb o1"></span>
+    <span class="orb o2"></span>
+    <span class="orb o3"></span>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">🌱</span>
+        <span class="brand-name">Green<em>Gains</em></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#calculator" class="nav-link">Protein Calc</a>
+        <a href="#plans" class="nav-link">Meal Plans</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20">
+          <circle cx="9" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/>
+          <path d="M3 3h2l2.4 12.2a1.8 1.8 0 0 0 1.8 1.5h7.9a1.8 1.8 0 0 0 1.8-1.4L21 7H6"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">💪 100% vegan · built for lifters</span>
+        <h1>Fuel your <em>gains.</em><br />Zero animals harmed.</h1>
+        <p>High-protein plant-based meals, shakes and snacks — macro-balanced for cutting and bulking. Cooked fresh, delivered chilled, ready in 3 minutes.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop High-Protein <span class="arrow">→</span></a>
+          <a href="#calculator" class="btn btn-ghost">🧮 Protein Calculator</a>
+        </div>
+        <div class="hero-stats glass">
+          <div><strong>32g</strong><span>avg protein / meal</span></div>
+          <div><strong>4.9★</strong><span>3,100+ reviews</span></div>
+          <div><strong>₹0</strong><span>delivery over ₹499</span></div>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="macro-card glass">
+          <div class="macro-head"><span class="macro-emoji">🥗</span><div><strong>Power Buddha Bowl</strong><small>quinoa · tofu · edamame</small></div></div>
+          <div class="macro-bars">
+            <div class="bar-row"><span>Protein</span><div class="bar"><i style="--w:78%"></i></div><b>32g</b></div>
+            <div class="bar-row"><span>Carbs</span><div class="bar"><i style="--w:52%"></i></div><b>44g</b></div>
+            <div class="bar-row"><span>Fats</span><div class="bar"><i style="--w:34%"></i></div><b>12g</b></div>
+          </div>
+          <div class="macro-foot"><span class="kcal">520 kcal</span><span class="veg-badge">🌿 vegan</span></div>
+        </div>
+        <span class="float f1">🥑</span>
+        <span class="float f2">💪</span>
+        <span class="float f3">🫐</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST STRIP ===================== -->
+  <section class="strip">
+    <div class="container strip-inner glass">
+      <div class="strip-item"><span>🌱</span><div><strong>100% Vegan</strong><p>No dairy, no honey, no compromises.</p></div></div>
+      <div class="strip-item"><span>🧪</span><div><strong>Lab-Tested Protein</strong><p>Every batch macro-verified.</p></div></div>
+      <div class="strip-item"><span>🚫</span><div><strong>No Refined Sugar</strong><p>Sweetened with dates & fruit only.</p></div></div>
+      <div class="strip-item"><span>📦</span><div><strong>Eco Packaging</strong><p>Compostable boxes, zero plastic.</p></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== SHOP ===================== -->
+  <section class="section shop" id="shop">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">🛒 the menu</span>
+        <h2>Shop <em>high-protein</em> plants</h2>
+        <p>Macro-counted, chef-crafted, delivered chilled. Heat for 3 minutes and eat.</p>
+      </div>
+      <div class="toolbar glass reveal">
+        <div class="search">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="searchInput" type="search" placeholder="Search bowls, shakes, snacks…" autocomplete="off" />
+        </div>
+        <div class="pills" id="filterPills">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="meals">High-Protein Meals</button>
+          <button class="pill" data-filter="shakes">Shakes</button>
+          <button class="pill" data-filter="snacks">Snacks</button>
+          <button class="pill" data-filter="staples">Staples</button>
+        </div>
+        <select class="glass-select" id="sortSelect" aria-label="Sort products">
+          <option value="popular">Sort: Popular</option>
+          <option value="protein">Protein: High → Low</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+        </select>
+      </div>
+      <div class="grid" id="productGrid"></div>
+      <p class="empty" id="emptyMsg" hidden>No gains found 😅 — try a different search.</p>
+    </div>
+  </section>
+
+  <!-- ===================== PROTEIN CALCULATOR ===================== -->
+  <section class="section calc" id="calculator">
+    <div class="container">
+      <div class="calc-inner glass reveal">
+        <div class="calc-copy">
+          <span class="eyebrow">🧮 protein calculator</span>
+          <h2>How much <em>protein</em> do you need?</h2>
+          <p>Enter your details — we'll compute your daily target and fill your cart to match it.</p>
+          <div class="calc-fields">
+            <label>Weight (kg)<input id="calcWeight" type="number" min="30" max="200" value="70" /></label>
+            <label>Goal
+              <select id="calcGoal">
+                <option value="cut">Cut / Fat loss</option>
+                <option value="maintain" selected>Maintain / Recomp</option>
+                <option value="bulk">Bulk / Muscle gain</option>
+              </select>
+            </label>
+            <label>Activity
+              <select id="calcActivity">
+                <option value="1.2">Light · 2–3 workouts / wk</option>
+                <option value="1.55" selected>Moderate · 4–5 workouts / wk</option>
+                <option value="1.9">Athlete · daily training</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" id="calcBtn">Calculate 💪</button>
+          </div>
+        </div>
+        <div class="calc-result" id="calcResult" hidden>
+          <h3>Your daily target</h3>
+          <div class="big-num"><span id="proteinTarget">0</span><small>g protein / day</small></div>
+          <p class="kcal-line">≈ <b id="kcalTarget">0</b> kcal maintenance</p>
+          <p class="calc-hint" id="calcHint"></p>
+          <button class="btn btn-primary" id="calcAddBtn">🛒 Add suggested meals</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MEAL PLANS ===================== -->
+  <section class="section plans" id="plans">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">📅 subscriptions</span>
+        <h2>Meal <em>plans</em> for your program</h2>
+        <p>Fresh deliveries every morning. Pause or cancel anytime — no lock-in.</p>
+      </div>
+      <div class="plans-grid" id="plansGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">⭐ gym bros & girls approve</span>
+        <h2>Real <em>lifters</em>, real gains</h2>
+      </div>
+      <div class="reviews-grid">
+        <figure class="review glass reveal">
+          <blockquote>"Swapped chicken for the Tofu Tikka Bowl — hit 160g protein daily and PR'd my squat in 8 weeks."</blockquote>
+          <figcaption><span class="avatar">🏋️</span><div><strong>Arjun M.</strong><small>Powerlifter · 82kg</small></div></figcaption>
+        </figure>
+        <figure class="review glass reveal">
+          <blockquote>"The Green Muscle Shake actually tastes like a treat. Cutting has never felt this easy."</blockquote>
+          <figcaption><span class="avatar">🥊</span><div><strong>Priya S.</strong><small>Boxer · cutting</small></div></figcaption>
+        </figure>
+        <figure class="review glass reveal">
+          <blockquote>"Bulk Builder plan for 3 months. Zero cooking, zero dairy, +6kg lean mass. Insane value."</blockquote>
+          <figcaption><span class="avatar">🦍</span><div><strong>Rahul K.</strong><small>Bodybuilder · bulking</small></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section faq" id="faq">
+    <div class="container faq-wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">❓ faq</span>
+        <h2>Good <em>questions</em></h2>
+      </div>
+      <details class="glass reveal"><summary>Is everything really 100% vegan?</summary><p>Yes — no dairy, whey, honey or animal-derived additives anywhere in our kitchen. Every product is certified vegan and protein content is lab-tested per batch.</p></details>
+      <details class="glass reveal"><summary>Where does the protein come from?</summary><p>Pea & rice protein isolates, tofu, tempeh, seitan, edamame, lentils and quinoa. Complete amino profiles by pairing legumes with grains.</p></details>
+      <details class="glass reveal"><summary>How fresh is the food on delivery?</summary><p>Cooked the same morning and delivered chilled (never frozen) in compostable packaging. Fridge life is 3 days — heat for 3 minutes and eat.</p></details>
+      <details class="glass reveal"><summary>Can I pause or cancel a meal plan?</summary><p>Anytime, from your WhatsApp chat with us. No lock-in, no cancellation fee.</p></details>
+    </div>
+  </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner glass">
+      <div>
+        <a href="#top" class="brand"><span class="brand-mark">🌱</span><span class="brand-name">Green<em>Gains</em></span></a>
+        <p>Plant-based fuel for people who lift. Made fresh daily in Bengaluru.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#shop">Shop</a><a href="#calculator">Protein Calc</a><a href="#plans">Meal Plans</a><a href="#faq">FAQ</a>
+      </div>
+      <div class="foot-contact">
+        <a href="https://wa.me/919000000000" target="_blank" rel="noopener">💬 WhatsApp us</a>
+        <a href="mailto:hello@greengains.fit">✉️ hello@greengains.fit</a>
+        <a href="tel:+919000000000">📞 +91 90000 00000</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Green Gains · 100% vegan · no whey, no way</p>
+  </footer>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>🛒 Your Cart</h3>
+      <button class="icon-btn" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="free-ship">
+      <div class="fs-bar"><i id="fsFill"></i></div>
+      <small id="fsText">Add ₹499 more for free delivery</small>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+      <p class="cart-note">Delivery ₹49 · free over ₹499 · pay via WhatsApp</p>
+      <button class="btn btn-primary w-full" id="checkoutBtn">Checkout on WhatsApp →</button>
+      <button class="btn btn-ghost w-full" id="clearCartBtn">Clear cart</button>
+    </div>
+  </aside>
+  <button class="float-cart" id="floatCart" aria-label="Open cart">🛒<span class="cart-count" id="cartCount2">0</span></button>
+  <div class="toast glass" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
